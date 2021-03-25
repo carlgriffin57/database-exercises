@@ -45,3 +45,4 @@ LIMIT 5 OFFSET 50;
 -- Chikako	Ibel	1957-12-25	1990-08-12
 -- Shounak	Jansen	1955-12-25	1990-08-13
 -- Zhigen	Boissier	1961-12-25	1990-08-18
+-- The limit is 5 and offset is the index on where the list begins on page 10.
