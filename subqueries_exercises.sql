@@ -66,3 +66,15 @@ AND to_date LIKE '9999%';
 
 -- 83 returned
 
+-- BONUS 1. Find all the department names that currently have female managers.
+SELECT departments.dept_name AS 'Department Name', 
+       CONCAT(first_name, ' ', last_name) AS 'Department Manager'
+FROM employees
+JOIN dept_manager USING(emp_no)    
+JOIN departments USING(dept_no)
+WHERE gender = 'F' AND to_date > NOW();
+
+-- Finance	Isamu Legleitner
+-- Human Resources	Karsten Sigstam
+-- Development	Leon DasSarma
+-- Research	Hilary Kambil
